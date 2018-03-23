@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+John Carter
+jcarter6@una.edu
+https://codepen.io/jbcarter39/
+
+Mar. 22th, 2018
+Version 1.0
+Browser: Google Chrome Version 64.0.3282.186 (Official Build) (64-bit)
+Validated via: W3Schools html/css validator
+-->
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project 5: Find My iPhone</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+
+
+<div class="phone">
+
+  <div class="Find-iPhone">Find my iPhone
+
+    <img id="image" src="https://is1-ssl.mzstatic.com/image/thumb/Purple1/v4/8a/84/70/8a847022-14af-1038-0a9f-651ac230cd58/mzl.vqllpzjj.png/246x0w.jpg" alt="image">
+
+    <div class="container">
+
+      
+        <form name="form" method="post" onSubmit="return ValidateEmail()">
+          AppleID <input type="text" class="email" name="email" placeholder="e-mail"><br> Password <input type="password" class="pwd" placeholder="Password " id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required>
+          <br>
+          <button class="btn" type="submit" value="Sign In" onclick="setColor('button', '#101010')">Sign in</button>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		</form>
+      
+
+    </div>
+
+    <div class="bottomText">
+      <p>Forget AppleID or Password? </p>
+      <p> Setup Instructions
+      </p>
+
+    </div>
+
+    <div id="popup"> Your session has expired
+    </div>
+
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+
+
+</html>

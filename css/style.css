@@ -1,0 +1,141 @@
+/*Style page for Find my iPhone*/
+/*style to change background color of sign in button*/
+.btn {
+  
+  color: #000;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -ms-transition: background 1s linear;
+  -o-transition: background 1s linear;
+  transition: background 1s linear;
+}
+
+/* Imports new font family*/
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"),
+    local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/*style for iPhone text hyperlinks */
+.bottomText {
+  color: green;
+  font-size: 10px;
+  text-decoration: underline;
+}
+.bottomText:hover {
+  font-size: 16px;
+}
+
+/* Style the Title of the page*/
+.Find-iPhone {
+  margin: 20px 0px 0px 0px;
+  font-family: system;
+  color: black;
+  font-weight: lighter;
+  font-size: 22px;
+  font-family: system;
+  text-align: center;
+}
+/* Style the phonr*/
+.phone {
+  background-color: #ffffff;
+  width: 300px;
+  height: 550px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 5%;
+  border: 1px solid black;
+  display: flex;
+}
+
+/* Style the "find iPhone" radar image*/
+#image {
+  width: 200px;
+  height: 180px;
+  clear: both;
+  border-radius: 50%;
+  border: 1px solid grey;
+  margin: 20px;
+}
+
+/* Style all input fields */
+button {
+  width: 75%;
+  height: 30px;
+  padding: 0px;
+  background-color: #7a7a7a;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  margin: 0px 0px 0px 0px;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+  caret-color: #0ea55a;
+}
+
+/*style for popup window */
+#popup {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin: 0px 0px 0px -140px; 
+    background-color: #ef6464; 
+    color: #ffffff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+    box-shadow: 3px 3px #d6d6d6;
+}
+
+/* Show the popup when clicking on a button (class added with JavaScript) */
+#popup.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
