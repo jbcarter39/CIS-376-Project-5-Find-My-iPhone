@@ -37,7 +37,7 @@ function ValidateEmail() {
   //alerts users if email entered is invalid
   if (checkEmail(emailID.value) == false) {
     emailID.value = "";
-    alert("Invalid Email Address");
+    alert("Invalid Email Address: Please enter a valid email address.");
     emailID.focus();
     return false;
   }
